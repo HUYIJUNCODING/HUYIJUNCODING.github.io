@@ -1,0 +1,21 @@
+{
+    "name": "Stone_blog",
+    "short_name": "blog",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#d6ac76bf",
+    "description": "Stone的个人主页",
+    "theme_color": "#a07c62",
+    "icons": [
+      {
+        "src": "./imgs/avator.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "web"
+      }
+    ]
+  }

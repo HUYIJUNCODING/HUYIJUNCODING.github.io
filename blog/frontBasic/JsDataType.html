@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS数据类型 | Stone&#39;s blog</title>
+    <meta name="description" content="我的个人博客">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="manifest" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.149a318a.css" as="style"><link rel="preload" href="/assets/js/app.ea401947.js" as="script"><link rel="preload" href="/assets/js/13.955ef775.js" as="script"><link rel="prefetch" href="/assets/js/10.8289ad59.js"><link rel="prefetch" href="/assets/js/11.49cc4223.js"><link rel="prefetch" href="/assets/js/12.b6072a42.js"><link rel="prefetch" href="/assets/js/14.9a2f41d1.js"><link rel="prefetch" href="/assets/js/15.54d212a3.js"><link rel="prefetch" href="/assets/js/16.5bedfff1.js"><link rel="prefetch" href="/assets/js/17.d4ecc3c5.js"><link rel="prefetch" href="/assets/js/18.5fab1924.js"><link rel="prefetch" href="/assets/js/19.91cf35e1.js"><link rel="prefetch" href="/assets/js/2.32f31581.js"><link rel="prefetch" href="/assets/js/20.8c918921.js"><link rel="prefetch" href="/assets/js/3.1930e7d8.js"><link rel="prefetch" href="/assets/js/4.5384e2e8.js"><link rel="prefetch" href="/assets/js/5.01f97a81.js"><link rel="prefetch" href="/assets/js/6.a809fad3.js"><link rel="prefetch" href="/assets/js/7.56a8429c.js"><link rel="prefetch" href="/assets/js/8.fd3437fd.js"><link rel="prefetch" href="/assets/js/9.7380b7a3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.149a318a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Stone's blog</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/space/" class="nav-link">Space</a></div><div class="nav-item"><a href="https://github.com/HUYIJUNCODING" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/space/" class="nav-link">Space</a></div><div class="nav-item"><a href="https://github.com/HUYIJUNCODING" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>前端基础</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/blog/frontBasic/JsDataType.html" class="active sidebar-link">JS数据类型</a></li><li><a href="/blog/frontBasic/ES6Proxy.html" class="sidebar-link">初识ES6 Proxy属性</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>小程序</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>框架相关</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="js数据类型（分类，区别，判断）"><a href="#js数据类型（分类，区别，判断）" aria-hidden="true" class="header-anchor">#</a> JS数据类型（分类，区别，判断）</h2> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>关于数据类型方面的知识点很多，小弟主要从数据类型的<code>分类</code>，<code>区别</code>，<code>类型判断</code>三个角度来总结下，如有不当，还望路过的各位大佬给予指正！</p></div> <h3 id="分类"><a href="#分类" aria-hidden="true" class="header-anchor">#</a> 分类</h3> <p>最新的 ECMAScript 标准定义了8种数据类型<br> <code>数字（Number）</code>、<code>字符串（String）</code>、<code>布尔值（Boolean）</code>、<code>undefined</code>、<code>null</code>、<code>任意精度的整数 (BigInt)</code>、<code>Symbol（ES6 新添加的一种类型）</code>、<code>对象（Object）</code>      。其中对象类型包括：<code>数组（Array）</code>、<code>函数（Function）</code>、还有两个特殊的对象：<code>正则（RegExp）</code> 和 <code>日期（Date）</code>。</p> <p>关于<code>BigInt</code>和<code>Symbol</code>类型不太常用,因此我们在这里就不过多讨论了,下面通过几个不同角度对常用的6种数据类型进行下归类。</p> <ul><li><p>按存储类型分类<br></p> <ul><li>基本类型：<code>数字（Number）</code>、<code>字符串（String）</code> 、<code>布尔值（Boolean）</code>、 <code>undefined</code>、<code>null</code></li> <li>引用类型：<code>对象（Object） 其中包括 Array、Function、RegExp、Date</code></li></ul></li> <li><p>按是否可变分类</p> <ul><li>可变类型：<code>对象（Object） 其中包括 Array、Function、RegExp、Date</code></li> <li>不可变类型：：<code>数字（Number）</code>、<code>字符串（String）</code> 、<code>布尔值（Boolean）</code>、 <code>undefined</code>、<code>null</code></li></ul></li> <li><p>按是否可拥有方法分类</p> <ul><li>可拥有方法类型：<code>数字（Number）</code>、<code>字符串（String）</code> 、<code>布尔值（Boolean）、对象（Object）</code></li> <li>不可拥有方法类型：<code>null、undefined</code></li></ul></li></ul> <h3 id="基本类型和引用类型区别"><a href="#基本类型和引用类型区别" aria-hidden="true" class="header-anchor">#</a> 基本类型和引用类型区别</h3> <ul><li>基本类型的值不可变，引用类型值可变<br></li></ul> <div class="language- extra-class"><pre class="language-text"><code>//基本数据类型
+var a = 'abc';
+var b= 123;
+a = 'def';
+b = 456;
+console.log(a) //def
+console.log(b) //456
+</code></pre></div><p>可能我们会使用上面这个栗子来推翻基本数据类型的值不可变，但其实这里并不冲突，用 <code>var a = 'abc' a = 'def'</code>来说明，
+首先声明一个变量<code>a</code> 并给其赋值<code>abc</code>， 这个时候在栈内存中会为<code>a</code>变量开辟一块空间来存储<code>abc</code>这个值，当将值更改为<code>def</code>的时候，会将之前变量<code>a</code>(栈内存中标识符a)之前对应的值整体给<code>覆盖掉</code>，然后存入新值，此时<code>a</code>的值就成了<code>def</code>。因此，分析后，我们会发现，对于基本数据类型，并不是对原始值的操作，而是将原始值覆盖后重新给变量赋新值。</p> <div class="language- extra-class"><pre class="language-text"><code>//引用数据类型
+ var cat = {};
+ cat.name = 'Tom';
+ cat.age = 12;
+ console.log(cat) //{name: &quot;Tom&quot;, age: 12}
+ cat.name = 'candy'
+ cat.age = '10'
+ console.log(cat) //{name: &quot;candy&quot;, age: 10}
+</code></pre></div><p>对于引用类型，我们可以清晰的看到是可以通过操作指针的方式来修改存储在堆内存中的对象的属性值。</p> <ul><li>基本类型不能添加属性和方法，引用类型可以添加属性和方法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>//基本数据类型
+var base = 'base';
+base.attr = 'attr';
+base.method = function(){//...};
+console.log(base.attr); // undefined
+console.log(base.method); // undefined
+
+//引用数据类型
+var cat = {};
+cat.name = 'Tom';
+cat.age = 10;
+cat.sing = function(){console.log(cat.name + 'sing');} 
+cat.sing();// 'Tom sing'
+</code></pre></div><ul><li>基本类型的比较是值的比较，引用类型的比较是引用的比较</li></ul> <div class="language- extra-class"><pre class="language-text"><code>//基本数据类型
+var a = 1;
+var b = true;
+var c = '1';
+console.log(a == b);//true
+console.log(a === b);//false
+console.log(a == c);//true
+console.log(a === c);//false
+</code></pre></div><p>这个栗子，其实是为了说明基本数据类型的比较是值的比较，只有当两者的值相等的情况下它们才相等，但栗子中的布尔类型和数字类型使用<code>==</code>符号比较会相等，其实是<code>类型转换</code>和<code>==</code>符号本身特性作用的结果，因此，这里也暴露出一个使用问题就是当我们在实际应用中尽量使用<code>===</code>对数据进行比较，从而消除因类型转换导致的不符合预期效果的错误结果。</p> <div class="language- extra-class"><pre class="language-text"><code>//引用数据类型
+var obj1 = {};
+var obj2 = {};
+console.log(obj1 == obj2); // false
+</code></pre></div><p>为什么不相等呢？答案显而易见，就是因为引用类型的比较是引用地址的比较，<code>obj1</code>和<code>obj2</code>是两个独立声明的变量，所以<code>堆</code>内存中所分配的空间是不同的区域，那么引用地址也是不相同的，相当于两个不同房间对应的房间号是不同的，对比引用地址，地址不同，所以就不相等。</p> <ul><li>基本类型存储在栈内存，引用类型存储在栈内存和堆内存<br> <ul><li>基本类型数据的存储位置是在      <strong>栈内存</strong> 中，会将声明变量的<code>标识符，值</code>进行存储，我的看法是因为基本类型的数据结构简单以及占用内存空间小的原因。</li> <li>引用类型数据的存储位置分两部分：<strong>栈内存</strong> 存储声明变量的<code>标识符</code>和指向<code>堆内存</code>中存储的值的<code>指针</code>，
+<strong>堆内存</strong> 存储实际的值（对象），外部访问的时候是通过<code>指针</code>来间接访问到数据对象。</li></ul></li></ul> <h3 id="类型判断"><a href="#类型判断" aria-hidden="true" class="header-anchor">#</a> 类型判断</h3> <ul><li>typeof<br></li></ul> <p><code>typeof</code> 运算符用来判断数据类型，它会返回一个表示数据类型的字符串，它可以准确判断的数据类型有<code>number</code>、<code>string</code>、<code>boolean</code>、<code>undefined</code>、<code>function</code>，但对于<code>null</code>和除过<code>function</code>以外的引用类型就力不从心，均会返回<code>object</code>。</p> <div class="language- extra-class"><pre class="language-text"><code> typeof 1; // number
+ typeof '';//string
+ typeof true; //boolean
+ typeof undefined; //undefined
+ typeof new Function(); //function
+ typeof null; //object 无效
+ typeof [] ; //object 无效
+ typeof new Date(); //object 无效
+ typeof new RegExp(); //object 无效
+</code></pre></div><ul><li>instanceof<br> <code>instanceof</code>  运算符用于检测构造函数的 <code>prototype</code> 属性是否出现在某个实例对象的原型链，这是官方的解释，感觉有点绕，简单的讲就是判断运算符左操作数对象的原型链上是否有右边这个构造函数的 <code>prototype</code>属性，也就是说指定对象是否是某个构造函数的实例，最后返回布尔值。</li></ul> <div class="language- extra-class"><pre class="language-text"><code>var num = 123
+num instanceof Number //false
+[] instanceof Array; //true
+[] instanceof Object; //true
+{} instanceof Array; //false
+new Date() instanceof Date;//true
+new Date() instanceof Object;//true
+function Person(){};
+new Person() instanceof Person;//true
+new Person() instanceof Object;//true
+
+</code></pre></div><p>首先说明一点，instanceof 运算符只能用于引用类型的判断，无法应用于基本数据类型判断。从上面这个栗子我们可以看出所有的引用类型数据都是 Object类型的实例（原型链的顶端就是<code>Object</code>对象），因此在实际应用中一般使用<code>xxx instanceof Array</code>或者<code>xxx instanceof Function</code>，而不会使用<code>xxx instanceof Object</code>。</p> <ul><li>Object.prototype.toString<br></li></ul> <p>首先看一个栗子</p> <div class="language- extra-class"><pre class="language-text"><code>    const dataArr = [1,'str',true,null,undefined,{},[],new Function(),new Date(),new RegExp()];
+    
+    for(let item of dataArr) {
+        const type = typeOf(item);
+        console.log(type); 
+        //依次返回：number、 string、 boolean、 null、 
+        //undefined、 object、 array、 function、 date、 regExp
+    }
+             
+    function typeOf(obj) {
+        const toString = Object.prototype.toString;
+        const map = {
+            &quot;[object Boolean]&quot;: &quot;boolean&quot;,
+            &quot;[object Number]&quot;: &quot;number&quot;,
+            &quot;[object String]&quot;: &quot;string&quot;,
+            &quot;[object Function]&quot;: &quot;function&quot;,
+            &quot;[object Array]&quot;: &quot;array&quot;,
+            &quot;[object Date]&quot;: &quot;date&quot;,
+            &quot;[object RegExp]&quot;: &quot;regExp&quot;,
+            &quot;[object Undefined]&quot;: &quot;undefined&quot;,
+            &quot;[object Null]&quot;: &quot;null&quot;,
+            &quot;[object Object]&quot;: &quot;object&quot;
+        };
+        return map[toString.call(obj)]; //Object.prototype.toString.call(obj) 或者 Object.prototype.toString.apply(obj)
+    }
+
+</code></pre></div><p>可以看到<code>toString()</code>几乎可以准确检测所有的数据，因此是一个具有普遍适用性的通用方法。并且使用的时候需要采用<code>.call（.apply）</code>的调用方式，这里主要原因是默认情况下（<code>toString</code>方法没有被复写），该方法会默认返回其调用者的具体类型，也就是<code>toString</code>运行时this指向的对象类型, 其返回的类型格式为<code>[object,xxx]</code>。所以使用<code>.call(thisArg)</code>或者<code>.apply(thisArg)</code>，<code>thisArg</code>参数就是我们需要检测的目标，也就是<code>this</code>所指的调用对象，这样就会返回当前检测目标的准确数据类型。</p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/blog/frontBasic/ES6Proxy.html">
+          初识ES6 Proxy属性
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.ea401947.js" defer></script><script src="/assets/js/13.955ef775.js" defer></script>
+  </body>
+</html>

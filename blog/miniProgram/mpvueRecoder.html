@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>微信小程序-录音 | Stone&#39;s blog</title>
+    <meta name="description" content="我的个人博客">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="manifest" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.149a318a.css" as="style"><link rel="preload" href="/assets/js/app.ea401947.js" as="script"><link rel="preload" href="/assets/js/15.54d212a3.js" as="script"><link rel="prefetch" href="/assets/js/10.8289ad59.js"><link rel="prefetch" href="/assets/js/11.49cc4223.js"><link rel="prefetch" href="/assets/js/12.b6072a42.js"><link rel="prefetch" href="/assets/js/13.955ef775.js"><link rel="prefetch" href="/assets/js/14.9a2f41d1.js"><link rel="prefetch" href="/assets/js/16.5bedfff1.js"><link rel="prefetch" href="/assets/js/17.d4ecc3c5.js"><link rel="prefetch" href="/assets/js/18.5fab1924.js"><link rel="prefetch" href="/assets/js/19.91cf35e1.js"><link rel="prefetch" href="/assets/js/2.32f31581.js"><link rel="prefetch" href="/assets/js/20.8c918921.js"><link rel="prefetch" href="/assets/js/3.1930e7d8.js"><link rel="prefetch" href="/assets/js/4.5384e2e8.js"><link rel="prefetch" href="/assets/js/5.01f97a81.js"><link rel="prefetch" href="/assets/js/6.a809fad3.js"><link rel="prefetch" href="/assets/js/7.56a8429c.js"><link rel="prefetch" href="/assets/js/8.fd3437fd.js"><link rel="prefetch" href="/assets/js/9.7380b7a3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.149a318a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Stone's blog</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/space/" class="nav-link">Space</a></div><div class="nav-item"><a href="https://github.com/HUYIJUNCODING" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/space/" class="nav-link">Space</a></div><div class="nav-item"><a href="https://github.com/HUYIJUNCODING" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>前端基础</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>小程序</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/blog/miniProgram/mpvueRecoder.html" class="active sidebar-link">微信小程序-录音</a></li><li><a href="/blog/miniProgram/taroCalendar.html" class="sidebar-link">taro-calendar</a></li><li><a href="/blog/miniProgram/aboutMiniProgramThink.html" class="sidebar-link">小程序开发的一些想法</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>框架相关</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="微信小程序-录音"><a href="#微信小程序-录音" aria-hidden="true" class="header-anchor">#</a> 微信小程序-录音</h2> <h3 id="前言"><a href="#前言" aria-hidden="true" class="header-anchor">#</a> 前言</h3> <p>自从前段时间开发一个小程序项目和录音这个功能邂逅之后，到今日仍久久不能忘怀。总感觉应该记录点神马，来描述我们之间的故事。说着，那就走起！</p> <p>或许应该先展示下效果比较合适，嗯，没毛病！</p> <p><img src="https://user-gold-cdn.xitu.io/2019/11/24/16e9dba94c52234c?w=624&h=1020&f=gif&s=4479534" alt></p> <p>因为为了让录音到播放以及播放暂停等各个环节效果清晰呈现，我用此替代掉了微信播放语音的那种展现形式，其实原理是一样的。那下面就对实现的过程展开轻描淡写。</p> <h4 id="api-准备"><a href="#api-准备" aria-hidden="true" class="header-anchor">#</a> API 准备</h4> <ul><li>初始化音频管理器<br> <code>wx.getRecorderManager()</code><br> <code>返回 RecorderManager对象</code></li> <li>创建内部 audio 上下文对象<br> <code>wx.createInnerAudioContext()</code></li> <li>开始录音<br> <code>RecorderManager.start(Object object)</code></li> <li>停止录音<br> <code>RecorderManager.stop()</code></li> <li>监听录音结束事件<br> <code>RecorderManager.onStop(function callback)</code></li> <li>播放录音<br> <code>InnerAudioContext.play()</code></li> <li>停止播放录音（停止后的音频再播放会从头开始播放）<br> <code>InnerAudioContext.stop()</code></li> <li>监听音频自然播放至结束的事件<br> <code>InnerAudioContext.onEnded(function callback)</code></li> <li>销毁当前音频上下文实例<br> <code>innerAudioContext.destroy()</code></li> <li>其他<br> <code>获取录音权限 wx.getSetting()</code><br> <code>上传七牛云 qiniuUploader.upload</code><br></li></ul> <h4 id="实现步骤"><a href="#实现步骤" aria-hidden="true" class="header-anchor">#</a> 实现步骤</h4> <p>上面罗列的<code>api</code>都是需要用到的，顺序也基本是按照实现一个录音功能的全流程来排列的，那下面就采用贴代码的方式（最熟悉的方式）来阐述吧，对了，我用的是 mpvue（vue 语法）为了避免篇幅较长，核心代码片段只贴出 js 实现，demo 完整代码请 <a href="https://github.com/HUYIJUNCODING/recoder-miniprogram" target="_blank" rel="noopener noreferrer">猛戳这里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 获取。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!--recoder.vue--&gt;
+&lt;template&gt;
+   ...
+&lt;/template&gt;
+&lt;script&gt;
+import { Base64 } from 'js-base64'; //引入安装的Base64依赖包，不是必须,如果用到七牛云上传则是必须的，因为token会过期，它可以检测token有效期
+const qiniuUploader = require(&quot;../../utils/qiniuUploader&quot;);//引入七牛云上传源码
+export default {
+    props: {},
+    components: {},
+    data() {
+        return {
+            audioValue: &quot;&quot;, //录音内容
+            duration: 0, //录音时长
+            recodeStatus: 0, //录音状态 0:未录音,1:正在录音2:录音完成
+            playStatus: 0, //播放状态 0:未播放,1:正在播放
+            recoderAuthStatus: false //录音授权状态
+        };
+    },
+    methods: {
+        //调用recorderManager.start开始录音
+        recorderManagerStart() {
+            this.recorderManager.start({
+                format: &quot;mp3&quot;,
+                duration: 60000
+            });
+            this.recodeStatus = 1;
+        },
+        //开始录音
+        startRecorder(index) {
+            let that = this;
+            if (this.recoderAuthStatus) {
+                this.recorderManagerStart();
+            } else {
+                wx.openSetting({
+                    success(res) {
+                        if (res.authSetting[&quot;scope.record&quot;]) {
+                            that.recoderAuthStatus = true;
+                            that.recorderManagerStart();
+                        }
+                    }
+                });
+            }
+        },
+
+        //结束录音
+        stopRecorder(index) {
+            this.recodeStatus = 2;
+            this.recorderManager.stop();
+        },
+        //播放录音
+        playVoice(index) {
+            if (this.playStatus == 0) {
+                //未播放状态则点击播放
+                if (!this.audioValue) {
+                    this.tip(&quot;请先录音！&quot;);
+                    return;
+                }
+                this.playStatus = 1;
+                this.innerAudioContext.src = this.audioValue;
+                this.innerAudioContext.play();
+            } else {
+                //正在播放状态,则点击暂停
+                this.playStatus = 0;
+                this.innerAudioContext.stop();
+            }
+        },
+        //删除录音，各属性，状态值init
+        removeRecoder(index) {
+            this.audioValue = &quot;&quot;;
+            this.recodeStatus = 0;
+            this.playStatus = 0;
+            this.duration = 0;
+        },
+        //获取权限设置
+        getAuthSetting() {
+            let that = this;
+            wx.getSetting({
+                success(res) {
+                    if (!res.authSetting[&quot;scope.record&quot;]) {
+                        wx.authorize({
+                            scope: &quot;scope.record&quot;,
+                            success() {
+                                that.recoderAuthStatus = true;
+                            },
+                            fail() {
+                                that.recoderAuthStatus = false;
+                            }
+                        });
+                    } else {
+                        that.recoderAuthStatus = true;
+                    }
+                }
+            });
+        },
+
+        //格式化录音时间
+        fmtRecoderTime(duration = 0) {
+            duration = duration / 1000;
+            const seconds = duration.toString().split(&quot;.&quot;)[0]; //取秒
+            return seconds;
+        },
+
+        //提示弹窗
+        tip(msg) {
+            wx.showModal({
+                title: &quot;提示&quot;,
+                content: msg,
+                showCancel: false
+            });
+        },
+        //上传音频
+        uploadAudio(filePath, success) {
+            // 交给七牛上传
+            qiniuUploader.upload(
+                filePath,
+                res =&gt; {
+                    let audioUrl = res.domain + res.truekey; //上传返回的url链接
+                    return (
+                        typeof success === &quot;function&quot; &amp;&amp;
+                        success({ audio: audioUrl })
+                    );
+                },
+                error =&gt; {
+                    console.log(&quot;error: &quot; + error);
+                },
+                {
+                    region: &quot;ECN&quot;, // 华东区
+                    uptokenURL: &quot;https://xxx/qiniu/uploadToken&quot;, //上传地址,需要后台配置
+                    shouldUseQiniuFileName: false
+                }
+                // Base64 //一般token都是有时效的,Base64可以解析当前token的到期时间,判断是否过期从而更新令牌
+            );
+        },
+        //初始化音频管理器
+        initRecorderManager() {
+            const recorderManager = wx.getRecorderManager();
+            recorderManager.onError(() =&gt; {});
+            //结束播放语音
+            recorderManager.onStop(res =&gt; {
+                const duration = this.fmtRecoderTime(res.duration); //获取录音时长
+                //小程序录音最长1分钟(60秒)
+                if (duration &gt; 60) {
+                    this.tip('录音时间不能超过60&quot;');
+                    this.recodeStatus = 2; //结束
+                    return;
+                } else if (duration &lt; 1) {
+                    this.duration = 1; //不计,未开始
+                    return;
+                }
+                this.duration = duration;
+             //  this.audioValue = res.tempFilePath;(这里是录音本地文件，如果需要在其他地方播放，则需要上传转换成网络链接)
+
+                //上传本地音频
+                 this.uploadAudio(res.tempFilePath, src =&gt; {
+                     this.audioValue = src.audio;
+                 });
+            });
+            this.recorderManager = recorderManager;
+
+            //创建内部 audio 上下文 InnerAudioContext 对象。
+            const innerAudioContext = wx.createInnerAudioContext();
+            //监听音频自然播放至结束的事件
+            innerAudioContext.onEnded(() =&gt; {
+                //音频自然播放至结束的事件的回调函数
+                this.playStatus = 0; //播放状态重置为未开始
+            });
+            innerAudioContext.onError(res =&gt; {});
+            this.innerAudioContext = innerAudioContext;
+        },
+        //销毁当前组件音频实例
+        destoryInnerAudioContext() {
+            this.innerAudioContext.destroy();
+            console.log(&quot;音频实例销毁啦&quot;);
+        }
+    },
+    computed: {},
+    watch: {},
+    onLoad() {
+        //判断是否已授权录音权限
+        this.getAuthSetting();
+        //初始化音频管理器
+        this.initRecorderManager();
+    },
+    onUnload() {
+        this.destoryInnerAudioContext();//销毁当前音频上下文实例
+    }
+};
+&lt;/script&gt;
+</code></pre></div><ul><li>以上基本就是实现一个录音-&gt;播放的全过程了，基本注释在代码中都有体现，因此也没有像以往那样进行逐步分析。其实本身小程序基本帮我们把需求实现需要用到的功能都封装成了相应的<code>api</code>，应该说使用起来还是很方便和简单的，唯一可能就是<code>api</code>众多，可能在使用的时候不知所措该用哪一个最合适，所以，以上实现的<code>api</code>也不一定是最合适的，因此，各位大佬如有更好的实现方式，请不吝赐教，互相分享，共同进步！</li></ul> <h4 id="后记"><a href="#后记" aria-hidden="true" class="header-anchor">#</a> 后记</h4> <p><code>其实，这个世界哪有什么岁月静好，只不过有人替你负重前行罢了，加油，骚年！</code></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/frontBasic/ES6Proxy.html" class="prev">
+          初识ES6 Proxy属性
+        </a></span> <span class="next"><a href="/blog/miniProgram/taroCalendar.html">
+          taro-calendar
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.ea401947.js" defer></script><script src="/assets/js/15.54d212a3.js" defer></script>
+  </body>
+</html>

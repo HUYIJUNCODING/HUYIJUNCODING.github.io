@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>小程序开发的一些想法 | Stone&#39;s blog</title>
+    <meta name="description" content="我的个人博客">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="manifest" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.149a318a.css" as="style"><link rel="preload" href="/assets/js/app.ea401947.js" as="script"><link rel="preload" href="/assets/js/14.9a2f41d1.js" as="script"><link rel="prefetch" href="/assets/js/10.8289ad59.js"><link rel="prefetch" href="/assets/js/11.49cc4223.js"><link rel="prefetch" href="/assets/js/12.b6072a42.js"><link rel="prefetch" href="/assets/js/13.955ef775.js"><link rel="prefetch" href="/assets/js/15.54d212a3.js"><link rel="prefetch" href="/assets/js/16.5bedfff1.js"><link rel="prefetch" href="/assets/js/17.d4ecc3c5.js"><link rel="prefetch" href="/assets/js/18.5fab1924.js"><link rel="prefetch" href="/assets/js/19.91cf35e1.js"><link rel="prefetch" href="/assets/js/2.32f31581.js"><link rel="prefetch" href="/assets/js/20.8c918921.js"><link rel="prefetch" href="/assets/js/3.1930e7d8.js"><link rel="prefetch" href="/assets/js/4.5384e2e8.js"><link rel="prefetch" href="/assets/js/5.01f97a81.js"><link rel="prefetch" href="/assets/js/6.a809fad3.js"><link rel="prefetch" href="/assets/js/7.56a8429c.js"><link rel="prefetch" href="/assets/js/8.fd3437fd.js"><link rel="prefetch" href="/assets/js/9.7380b7a3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.149a318a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Stone's blog</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/space/" class="nav-link">Space</a></div><div class="nav-item"><a href="https://github.com/HUYIJUNCODING" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/space/" class="nav-link">Space</a></div><div class="nav-item"><a href="https://github.com/HUYIJUNCODING" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>前端基础</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>小程序</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/blog/miniProgram/mpvueRecoder.html" class="sidebar-link">微信小程序-录音</a></li><li><a href="/blog/miniProgram/taroCalendar.html" class="sidebar-link">taro-calendar</a></li><li><a href="/blog/miniProgram/aboutMiniProgramThink.html" class="active sidebar-link">小程序开发的一些想法</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>框架相关</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="小程序开发的一些想法"><a href="#小程序开发的一些想法" aria-hidden="true" class="header-anchor">#</a> 小程序开发的一些想法</h2> <h3 id="前言"><a href="#前言" aria-hidden="true" class="header-anchor">#</a> 前言</h3> <p>对于初学者,最好的入门方式就是通读官方文档,不建议记api,用的时候可以快速找到就好</p> <ul><li><a href="https://developers.weixin.qq.com/miniprogram/dev/framework/" target="_blank" rel="noopener noreferrer">小程序官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://mpvue.com/mpvue/" target="_blank" rel="noopener noreferrer">mpvue官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener noreferrer">微信开发者工具<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <hr> <ul><li>不推荐使用原生开发的几点理由</li></ul> <ol><li><a href="https://juejin.im/post/5cfdcf056fb9a07ecd3d5068" target="_blank" rel="noopener noreferrer">开发效率低<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>频繁setData有性能消耗问题</li></ol> <p><img src="https://user-gold-cdn.xitu.io/2019/7/13/16bebeab6d4336ff?w=1204&h=685&f=png&s=123391" alt></p> <p><img src="https://user-gold-cdn.xitu.io/2019/7/13/16bebead961173f4?w=1420&h=588&f=png&s=287107" alt>
+3.wx.request存在并发量限制问题(最大并发量不能超过10)</p> <h3 id="关于尺寸"><a href="#关于尺寸" aria-hidden="true" class="header-anchor">#</a> <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxss.html#%E5%B0%BA%E5%AF%B8%E5%8D%95%E4%BD%8D" target="_blank" rel="noopener noreferrer">关于尺寸<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <h3 id="不支持vue-router"><a href="#不支持vue-router" aria-hidden="true" class="header-anchor">#</a> 不支持vue-router</h3> <ul><li>原生和mpvue官方不支持,这里是一个在mpvue基础上改造来的框架,支持vue-router类语法(对mpvue做了扩展) <a href="https://github.com/F-loat/mpvue-quickstart" target="_blank" rel="noopener noreferrer">猛撮这里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</li></ul> <h3 id="组件支持自定义类继承语法"><a href="#组件支持自定义类继承语法" aria-hidden="true" class="header-anchor">#</a> 组件支持自定义类继承语法</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> index<span class="token punctuation">.</span>vue <span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token keyword">import</span> BasePlatePage <span class="token keyword">from</span> <span class="token string">'@/utils/basePlatePage'</span>
+<span class="token keyword">export</span> defalut <span class="token keyword">new</span> <span class="token class-name">BasePlatePage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+	methods<span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token operator">...</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><ul><li>类继承方式扩展了组件能力,可以阻塞生命周期方法(一般是onLoad),来实现一些预备逻辑,例如授权</li> <li>按需引入</li></ul> <h3 id="不支持运行环境判断"><a href="#不支持运行环境判断" aria-hidden="true" class="header-anchor">#</a> 不支持运行环境判断</h3> <ul><li>但是有变通的办法</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>			小程序中__wxConfig<span class="token punctuation">.</span>envVersion可以用来区分小程序体验版，开发板，正式版<span class="token punctuation">.</span>
+			envVersion 类型为字符串
+			envVersion<span class="token punctuation">:</span> <span class="token string">'develop'</span><span class="token punctuation">,</span>    <span class="token comment">//开发版</span>
+			envVersion<span class="token punctuation">:</span> <span class="token string">'trial'</span><span class="token punctuation">,</span>          <span class="token comment">//体验版</span>
+			envVersion<span class="token punctuation">:</span> <span class="token string">'release'</span><span class="token punctuation">,</span>     <span class="token comment">//正式版</span>
+			这样我们就可以变通的来实现小程序中动态切换域名<span class="token punctuation">,</span>避免手动注释切换的方式<span class="token punctuation">.</span>
+			
+			<span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> request<span class="token punctuation">.</span>js <span class="token operator">--</span><span class="token operator">&gt;</span>
+			<span class="token keyword">let</span> envVersion <span class="token operator">=</span> __wxConfig<span class="token punctuation">.</span>envVersion <span class="token operator">||</span> <span class="token string">'develop'</span><span class="token punctuation">;</span>
+			<span class="token keyword">const</span> url <span class="token operator">=</span> envVersion <span class="token operator">===</span> <span class="token string">'develop'</span> <span class="token operator">?</span>  Store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>testUrl <span class="token operator">?</span> Store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>baseUrl
+
+</code></pre></div><ul><li>通用</li></ul> <h3 id="分包加载"><a href="#分包加载" aria-hidden="true" class="header-anchor">#</a> <a href="'https://developers.weixin.qq.com/miniprogram/dev/framework/subpackages.html'">分包加载</a></h3> <p><img src="https://user-gold-cdn.xitu.io/2019/7/13/16bebeb38998b34b?w=1166&h=313&f=png&s=31811" alt></p> <ul><li>主流方式</li></ul> <h4 id="_1-创建目录"><a href="#_1-创建目录" aria-hidden="true" class="header-anchor">#</a> 1.创建目录</h4> <p>pages 目录同级创建分包目录 moduleA-&gt;ma1.vue</p> <p><img src="https://user-gold-cdn.xitu.io/2019/7/13/16bebeb73e070ac4?w=409&h=255&f=png&s=8332" alt></p> <h4 id="_2-配置"><a href="#_2-配置" aria-hidden="true" class="header-anchor">#</a> 2.配置</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> pages<span class="token punctuation">.</span>json <span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token punctuation">{</span>
+	<span class="token string">&quot;pages&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token comment">//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages</span>
+		<span class="token punctuation">{</span>
+			<span class="token string">&quot;path&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;pages/index/index&quot;</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;style&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+				<span class="token string">&quot;navigationBarTitleText&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;uni-app&quot;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token punctuation">{</span>
+			<span class="token string">&quot;path&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;pages/index/todoList&quot;</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;style&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+				<span class="token string">&quot;navigationBarTitleText&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;todolist&quot;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+
+	<span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token string">&quot;subPackages&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+		<span class="token string">&quot;root&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;moduleA&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;pages&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+			<span class="token string">&quot;path&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ma1&quot;</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;style&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+				<span class="token string">&quot;navigationBarTitleText&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;ma1&quot;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">]</span>
+	<span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+	<span class="token string">&quot;globalStyle&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+		<span class="token string">&quot;navigationBarTextStyle&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;black&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;navigationBarTitleText&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;uni-app&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;navigationBarBackgroundColor&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;#F8F8F8&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;backgroundColor&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;#F8F8F8&quot;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>mpvue-quickstart 框架下分包的使用方式</li></ul> <p><img src="https://user-gold-cdn.xitu.io/2019/7/13/16bebebada45f926?w=1281&h=557&f=png&s=48191" alt></p> <h3 id="生命周期方法"><a href="#生命周期方法" aria-hidden="true" class="header-anchor">#</a> 生命周期方法</h3> <ul><li>mpvue支持vue所有生命周期方法和小程序所有生命周期方法</li> <li>页面跳转传参,只能在在onLoad方法以及之后方法中获取,onLoad中为事件参数e,onLoad之后方法通过<code>this.$root.$mp.query</code></li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>index<span class="token punctuation">.</span>vue  <span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">onLoad</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span><span class="token string">'onLoad'</span><span class="token punctuation">)</span> <span class="token comment">//e:上个页面传递的参数对象{a: 1,b:2}</span>
+   
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">onShow</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'onShow'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+	  
+  <span class="token function">onReady</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'onReady'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">created</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$root<span class="token punctuation">.</span>$mp<span class="token punctuation">.</span>query<span class="token punctuation">,</span><span class="token string">'created'</span><span class="token punctuation">)</span> <span class="token comment">//获取不到参数,并且会报错,原因是页面传递的参数最早是从onLoad中获取</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$root<span class="token punctuation">.</span>$mp<span class="token punctuation">.</span>query<span class="token punctuation">,</span><span class="token string">'mounted'</span><span class="token punctuation">)</span> <span class="token comment">//可以获取到页面传递的参数</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+打印顺序依次为 created<span class="token punctuation">,</span>onLoad<span class="token punctuation">,</span>onShow<span class="token punctuation">,</span>onReady<span class="token punctuation">,</span>mounted
+</code></pre></div><p><img src="https://user-gold-cdn.xitu.io/2019/7/13/16bebebe3a7a4e4a?w=800&h=2000&f=jpeg&s=118477" alt></p> <h3 id="模板语法支持情况"><a href="#模板语法支持情况" aria-hidden="true" class="header-anchor">#</a> <a href="http://mpvue.com/mpvue/#_6" target="_blank" rel="noopener noreferrer">模板语法支持情况<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <h3 id="扫码进入指定页面"><a href="#扫码进入指定页面" aria-hidden="true" class="header-anchor">#</a> 扫码进入指定页面</h3> <p>1.前端给后台指定页面路径,后台进行配置,生成二维码
+2.前端在onLoad中使用decodeURIComponent方法解析获取</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">onLoad</span><span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>params <span class="token operator">&amp;&amp;</span> params<span class="token punctuation">.</span>scene<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token function">decodeURIComponent</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span>scene<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'='</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">//扫码进入获取二维码携带的参数</span>
+	<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$route<span class="token punctuation">.</span>query<span class="token punctuation">.</span>id <span class="token comment">//普通路由跳转,携带的参数</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="转发"><a href="#转发" aria-hidden="true" class="header-anchor">#</a> 转发</h3> <p>1.点击右上角&quot;转发&quot;按钮转发
+2.页面内发起转发</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> share<span class="token punctuation">.</span>vue <span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+	  <span class="token operator">&lt;</span>button <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;share-btn&quot;</span> open<span class="token operator">-</span>type<span class="token operator">=</span><span class="token string">&quot;share&quot;</span><span class="token operator">&gt;</span>分享一下<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+	<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token punctuation">{</span>
+			shareImageURL<span class="token punctuation">:</span> <span class="token string">&quot;https:xxx&quot;</span> <span class="token comment">//图片地址</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+		
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token comment">//该方法为转发的核心方法,必须要有,否则不会触发转发</span>
+ <span class="token function">onShareAppMessage</span><span class="token punctuation">(</span><span class="token parameter"><span class="token keyword">from</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	 <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>from <span class="token operator">===</span> <span class="token string">'button'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 来自页面内转发按钮</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>target<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+		<span class="token keyword">return</span> <span class="token punctuation">{</span>
+			title <span class="token punctuation">:</span> <span class="token string">'小程序购物'</span> <span class="token punctuation">,</span> <span class="token comment">//转发标题,默认小程序名称</span>
+			path <span class="token punctuation">:</span> <span class="token string">'/pages/share'</span> <span class="token punctuation">,</span> <span class="token comment">//转发路径,默认当前页面 path ，必须是以 / 开头的完整路径</span>
+			imageUrl <span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>shareImageURL <span class="token comment">//自定义图片路径,支持网路路径和本地路径,png,jpg格式,默认使用截图</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="request请求"><a href="#request请求" aria-hidden="true" class="header-anchor">#</a> request请求</h3> <h4 id="wx-request"><a href="#wx-request" aria-hidden="true" class="header-anchor">#</a> wx.request</h4> <ul><li>小程序原生请求api,没啥说的,具体可以看<a href="https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html" target="_blank" rel="noopener noreferrer">wx.request<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>wx<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token punctuation">:</span> <span class="token string">'test.php'</span><span class="token punctuation">,</span> <span class="token comment">//仅为示例，并非真实的接口地址</span>
+  data<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    x<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+    y<span class="token punctuation">:</span> <span class="token string">''</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  header<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'content-type'</span><span class="token punctuation">:</span> <span class="token string">'application/json'</span> <span class="token comment">// 默认值</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">success</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">//接口请求成功的回调函数</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">fail</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//接口请求失败的回调函数</span>
+	  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token function">complete</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">//接口调用结束的回调,无论成功,失败都会执行</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+<span class="token punctuation">)</span>
+</code></pre></div><h4 id="fly-io"><a href="#fly-io" aria-hidden="true" class="header-anchor">#</a> <a href="https://wendux.github.io/dist/#/doc/flyio/readme" target="_blank" rel="noopener noreferrer">fly.io<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h4> <ul><li>官方描述:一个支持所有JavaScript运行环境的基于Promise的、支持请求转发、强大的http请求库。可以让您在多个端上尽可能大限度的实现代码复用。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 栗子 <span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token comment">//token</span>
+<span class="token keyword">import</span> auth <span class="token keyword">from</span> <span class="token string">'./auth'</span>
+<span class="token keyword">import</span> Store <span class="token keyword">from</span> <span class="token string">'../store'</span>
+
+<span class="token keyword">const</span> Fly <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'flyio/dist/npm/wx'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fly <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Fly</span>
+<span class="token keyword">const</span> serviceURL <span class="token operator">=</span> Store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>domain<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> baseConfig <span class="token operator">=</span> <span class="token punctuation">{</span>
+	method <span class="token punctuation">:</span> <span class="token string">'post'</span> <span class="token punctuation">,</span>
+	timeout <span class="token punctuation">:</span> <span class="token number">30000</span> <span class="token punctuation">,</span>
+	parseJson <span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">,</span>
+	withCredentials<span class="token punctuation">:</span><span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+
+fly<span class="token punctuation">.</span>config <span class="token operator">=</span> baseConfig<span class="token punctuation">;</span>
+
+<span class="token comment">//请求拦截</span>
+fly<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">config</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token comment">//请求头</span>
+	<span class="token keyword">let</span> token <span class="token operator">=</span> auth<span class="token punctuation">.</span><span class="token function">getToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    config<span class="token punctuation">.</span>baseURL <span class="token operator">=</span> serviceURL<span class="token punctuation">;</span>
+    config<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">'token'</span><span class="token punctuation">]</span> <span class="token operator">=</span> token<span class="token punctuation">;</span>
+	<span class="token keyword">return</span> config
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//响应拦截器</span>
+fly<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token parameter">response</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	<span class="token comment">// 特殊提示</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">Number</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>error<span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token comment">//console.error(response)</span>
+		wx<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+			title<span class="token punctuation">:</span> <span class="token string">'出错啦'</span><span class="token punctuation">,</span>
+			content<span class="token punctuation">:</span> response<span class="token punctuation">.</span>data<span class="token punctuation">[</span><span class="token string">'error_reason'</span><span class="token punctuation">]</span> <span class="token punctuation">,</span>
+			showCancel<span class="token punctuation">:</span> <span class="token boolean">false</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+		<span class="token keyword">return</span> <span class="token punctuation">{</span> fail <span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 出错了</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">Number</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>error<span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>fly<span class="token punctuation">.</span>config<span class="token punctuation">)</span>
+		console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span>
+		wx<span class="token punctuation">.</span><span class="token function">hideLoading</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		wx<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+			title<span class="token punctuation">:</span> <span class="token string">'温馨提示'</span><span class="token punctuation">,</span>
+			content<span class="token punctuation">:</span> response<span class="token punctuation">.</span>data<span class="token punctuation">[</span><span class="token string">'error_reason'</span><span class="token punctuation">]</span> <span class="token punctuation">,</span>
+			showCancel<span class="token punctuation">:</span> <span class="token boolean">false</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+		<span class="token keyword">return</span> <span class="token punctuation">{</span> fail <span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">return</span> response<span class="token punctuation">.</span>data <span class="token operator">&amp;&amp;</span> response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data <span class="token operator">||</span> <span class="token punctuation">{</span> success<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token parameter">error</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+	wx<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+		title<span class="token punctuation">:</span> <span class="token string">'出错啦'</span><span class="token punctuation">,</span>
+		content<span class="token punctuation">:</span> <span class="token string">'服务器开小差了~'</span><span class="token punctuation">,</span>
+		showCancel<span class="token punctuation">:</span> <span class="token boolean">false</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token comment">// 必须返回响应数据对象，否则后续无法对响应数据进行处理</span>
+	<span class="token keyword">return</span> error<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> fly
+</code></pre></div><h3 id="下拉刷新"><a href="#下拉刷新" aria-hidden="true" class="header-anchor">#</a> <a href="https://developers.weixin.qq.com/miniprogram/dev/reference/api/Page.html#onPullDownRefresh" target="_blank" rel="noopener noreferrer">下拉刷新<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <ul><li>1.app.json文件进行enablePullDownRefresh属性配置</li> <li>2.当前页面书写onPullDownRefresh方法(下拉刷新操作会自动触发该方法)</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!--app.json  --&gt;
+{
+  &quot;pages&quot;: [
+    {
+      &quot;path&quot;: &quot;pages/index&quot;,
+      &quot;config&quot; : {
+        &quot;enablePullDownRefresh&quot;: true, //当前页面是否允许下拉刷新
+        &quot;navigationBarTitleText&quot;: &quot;首页&quot;
+    }
+    },
+    {
+      &quot;path&quot;: &quot;pages/counter&quot;
+    },
+    {
+      &quot;path&quot;: &quot;packageA/logs&quot;,
+      &quot;subPackage&quot;: true
+    }
+  ],
+  &quot;window&quot;: {
+    &quot;backgroundTextStyle&quot;: &quot;light&quot;,
+    &quot;navigationBarBackgroundColor&quot;: &quot;#fff&quot;,
+    &quot;navigationBarTitleText&quot;: &quot;WeChat222&quot;,
+    &quot;navigationBarTextStyle&quot;: &quot;black&quot;
+  }
+}
+&lt;!-- index.vue --&gt;
+export default {
+	data() {
+		return {}
+	},
+	methods: {},
+	onPullDownRefresh: function() {
+	 // Do something when pull down.
+	  setTimeout(() =&gt; {
+            wx.stopPullDownRefresh();  //停止当前页面下拉刷新,这句代码必须写,否则会出现下拉后不返回的现象
+        }, 1500);
+  },
+		
+}
+	
+</code></pre></div><h3 id="上拉加载"><a href="#上拉加载" aria-hidden="true" class="header-anchor">#</a> <a href="https://developers.weixin.qq.com/miniprogram/dev/reference/api/Page.html#onreachbottom" target="_blank" rel="noopener noreferrer">上拉加载<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <ul><li>这个方法一般不需要app.json文件中配置,但是有的手机上会出现触底后方法不触发的现象,因此,为了解决这个问题,然后在app.json里面设置下触发距离</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>app<span class="token punctuation">.</span>json  <span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;pages&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token string">&quot;path&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;pages/index&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;config&quot;</span> <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;enablePullDownRefresh&quot;</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//当前页面是否允许下拉刷新</span>
+        <span class="token string">&quot;navigationBarTitleText&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;首页&quot;</span><span class="token punctuation">,</span>
+		<span class="token string">&quot;onReachBottomDistance&quot;</span><span class="token punctuation">:</span> <span class="token number">50</span> <span class="token comment">//设置触发距离,在触发距离内滑动期间，本事件只会被触发一次。</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;window&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;backgroundTextStyle&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;light&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;navigationBarBackgroundColor&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;#fff&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;navigationBarTitleText&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;WeChat222&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;navigationBarTextStyle&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;black&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> index<span class="token punctuation">.</span>vue <span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+	<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	methods<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+	  <span class="token function-variable function">onReachBottom</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Do something when page reach bottom.</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+		
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="scroll-view"><a href="#scroll-view" aria-hidden="true" class="header-anchor">#</a> <a href="https://developers.weixin.qq.com/miniprogram/dev/component/scroll-view.html" target="_blank" rel="noopener noreferrer">scroll-view<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h3> <ul><li>scroll-view 是一个比较消耗性能的组件,遇到顶部带有navBar切换有长列表(分页加载)的页面首先考虑使用定位+页面滚动方式,实在不行再考虑使用该方法</li></ul> <h3 id="部分原生组件的层级问题"><a href="#部分原生组件的层级问题" aria-hidden="true" class="header-anchor">#</a> 部分原生组件的层级问题</h3> <ul><li>小程序中部分原生组件,例如video,map等存在层级最高且无法通过z-index降低的问题,可以放一张图片进行占位,然后点击图片跳转到一个新页面播放视频或者展示地图</li> <li>cover-view和cover-image 覆盖层</li></ul> <h3 id="富文本解析"><a href="#富文本解析" aria-hidden="true" class="header-anchor">#</a> 富文本解析</h3> <ul><li><a href="https://github.com/icindy/wxParse" target="_blank" rel="noopener noreferrer">wxParse:原生开发中富文本解析<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://github.com/F-loat/mpvue-wxParse" target="_blank" rel="noopener noreferrer">mpvue-wxParse:mpvue中富文本解析<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h3 id="插入图表"><a href="#插入图表" aria-hidden="true" class="header-anchor">#</a> 插入图表</h3> <ul><li><a href="https://github.com/ecomfe/echarts-for-weixin" target="_blank" rel="noopener noreferrer">echarts-for-weixin:原生开发使用<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="https://github.com/F-loat/mpvue-echarts" target="_blank" rel="noopener noreferrer">mpvue-echarts:mpvue开发使用<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <hr> <ul><li>备注<br>
+1.mpvue中新增的页面,需要重新 npm run dev 来进行编译<br>
+2.同样可以使用ref<br>
+注意:虽然小程序中可以使用ref,但是具有局现象<div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>index<span class="token punctuation">.</span>vue<span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>div ref<span class="token operator">=</span><span class="token string">&quot;di&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span> <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>不可以<span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>list ref<span class="token operator">=</span><span class="token string">&quot;list&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>list<span class="token operator">&gt;</span> <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>可以<span class="token operator">--</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+    <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>di<span class="token punctuation">)</span>  <span class="token comment">//输出一个空 {},因此拿不到元素,可能是和小程序中没有dom概念(无法用document.的方式获取元素)有关吧,后面有时间具体研究下,不过当ref加载组件上,用法正常.</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>list<span class="token punctuation">)</span> <span class="token comment">//会输出当前组件对象</span>
+    <span class="token punctuation">}</span>    
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div>3.不支持动态组件<card></card></li></ul></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/miniProgram/taroCalendar.html" class="prev">
+          taro-calendar
+        </a></span> <span class="next"><a href="/blog/framework/vuepressBlog.html">
+          利用vuePress搭建个人博客
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.ea401947.js" defer></script><script src="/assets/js/14.9a2f41d1.js" defer></script>
+  </body>
+</html>

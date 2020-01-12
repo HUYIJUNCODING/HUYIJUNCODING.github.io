@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>taro-calendar | Stone&#39;s blog</title>
+    <meta name="description" content="我的个人博客">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="manifest" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.149a318a.css" as="style"><link rel="preload" href="/assets/js/app.ea401947.js" as="script"><link rel="preload" href="/assets/js/16.5bedfff1.js" as="script"><link rel="prefetch" href="/assets/js/10.8289ad59.js"><link rel="prefetch" href="/assets/js/11.49cc4223.js"><link rel="prefetch" href="/assets/js/12.b6072a42.js"><link rel="prefetch" href="/assets/js/13.955ef775.js"><link rel="prefetch" href="/assets/js/14.9a2f41d1.js"><link rel="prefetch" href="/assets/js/15.54d212a3.js"><link rel="prefetch" href="/assets/js/17.d4ecc3c5.js"><link rel="prefetch" href="/assets/js/18.5fab1924.js"><link rel="prefetch" href="/assets/js/19.91cf35e1.js"><link rel="prefetch" href="/assets/js/2.32f31581.js"><link rel="prefetch" href="/assets/js/20.8c918921.js"><link rel="prefetch" href="/assets/js/3.1930e7d8.js"><link rel="prefetch" href="/assets/js/4.5384e2e8.js"><link rel="prefetch" href="/assets/js/5.01f97a81.js"><link rel="prefetch" href="/assets/js/6.a809fad3.js"><link rel="prefetch" href="/assets/js/7.56a8429c.js"><link rel="prefetch" href="/assets/js/8.fd3437fd.js"><link rel="prefetch" href="/assets/js/9.7380b7a3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.149a318a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Stone's blog</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/space/" class="nav-link">Space</a></div><div class="nav-item"><a href="https://github.com/HUYIJUNCODING" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/space/" class="nav-link">Space</a></div><div class="nav-item"><a href="https://github.com/HUYIJUNCODING" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>前端基础</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>小程序</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/blog/miniProgram/mpvueRecoder.html" class="sidebar-link">微信小程序-录音</a></li><li><a href="/blog/miniProgram/taroCalendar.html" class="active sidebar-link">taro-calendar</a></li><li><a href="/blog/miniProgram/aboutMiniProgramThink.html" class="sidebar-link">小程序开发的一些想法</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>框架相关</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="taro中开发小程序价格日历"><a href="#taro中开发小程序价格日历" aria-hidden="true" class="header-anchor">#</a> taro中开发小程序价格日历</h2> <h3 id="前言"><a href="#前言" aria-hidden="true" class="header-anchor">#</a> 前言</h3> <p>因项目需求，最近使用 taro，开发了一款应用于票务商品购票的价格日历，感觉这个东西的应用还是比较多的，因此，就分享出来，关公门前耍个大刀，路过的大佬们手下留情哦！</p> <ul><li>先预览下效果</li></ul> <p><img src="https://user-gold-cdn.xitu.io/2019/11/28/16eb1e0cbfde0530?w=648&h=1050&f=gif&s=5232579" alt></p> <p>为了响应国家号召，节能减排，小弟就将一些边缘的逻辑和样式省略，重点分享日历这部分的逻辑，完整代码请 <a href="https://github.com/HUYIJUNCODING/calendar-taro" target="_blank" rel="noopener noreferrer">猛戳<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 这里。</p> <h4 id="实现思路分析"><a href="#实现思路分析" aria-hidden="true" class="header-anchor">#</a> 实现思路分析</h4> <p><code>ticketPriceList(设置有价格日期等信息的商品集合)</code>通过<code>props</code>传递进<code>calendar</code>组件，<code>calendar</code>组件中<code>initDate</code>方法对日历数据进行初始化（初始化日期显示数据，该方法会在组件初始化时先调用一次），同时遍历<code>ticketPriceList</code>，通过匹配两者日期是否相等来将有价格的日期同步到日历上显示。通过调用<code>prevMonth</code>和<code>nextMonth</code>来切换显示的月份，最终同样调用<code>initDate</code>来更新日历显示的数据。</p> <h4 id="实现代码"><a href="#实现代码" aria-hidden="true" class="header-anchor">#</a> 实现代码</h4> <div class="language- extra-class"><pre class="language-text"><code>&lt;!--calendar组件--&gt;
+
+import Taro, {
+    Component
+} from '@tarojs/taro'
+import { View, Image } from '@tarojs/components'
+
+import './index.scss'
+
+export default class SkuSelector extends Component {
+    //props default
+    static defaultProps = {
+        ticketPriceList: []
+    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            date: new Date(), //获取系统日期
+            currentDate: '', //当前选择的日期
+            selectMonth: '', //选择的月份
+            weeks: ['日', '一', '二', '三', '四', '五', '六'],
+            color: '#fff',//选中日期文字颜色
+            bgColor: 'f5f6f7',//非今日的日期背景色
+            dayArr: [], //月份天数
+            year: '', //当前选择的年
+            month: '', //当前选择的月
+            status: 1, //1:属于当月的天,0:属于上月2:属于下月
+            prevMonthStatus: false,//返回上个月按钮禁用状态,false:禁用,true,不禁用
+        }
+    }
+
+    //时间格式 xxxx-xx-xx 转时间戳
+    fmtDate(date) {
+        let dateStamp = new Date(date.replace(/-/g, '/'));
+        return dateStamp.getTime()
+    }
+
+    //设置有效的日期范围
+    setValidDate(dateObj) {
+        const currentDateStamp = this.fmtDate(dateObj.sellDate);//当前传入日期时间戳
+        const startDateStamp = this.fmtDate(this.props.ticketPriceList[0].sellDate);//设定价格的票券起始日期时间戳
+        const endDateStamp = this.fmtDate(this.props.ticketPriceList[this.props.ticketPriceList.length - 1].sellDate)///设定价格的票券结束日期时间戳
+        if (currentDateStamp &gt;= startDateStamp &amp;&amp; currentDateStamp &lt;= endDateStamp) {
+            if (dateObj.marketAmount &amp;&amp; dateObj.dailyStock &gt; 0) {//有效的日期(可点击)
+                dateObj.ban = 1;//可选状态
+                dateObj.color = '#666';
+            } else if (dateObj.marketAmount &amp;&amp; dateObj.dailyStock &lt;= 0) {//已售罄
+                dateObj.bgColor = '#999';
+                dateObj.color = '#333';
+                dateObj.ban = 3;//已售罄
+            }
+
+        }
+    }
+
+    //判断传入时间跟当日时间大小,返回值为两者差值
+    checkValidDate(date) {
+        let localYear = this.state.date.getFullYear()
+        let localMonth = this.state.date.getMonth() + 1
+        let day = this.state.date.getDate()
+        let localDate = this.formatNum(localYear) + '-' + this.formatNum(localMonth) + '-' + this.formatNum(day)//当日完整日期:'xxxx-xx-xx'
+        const currentDateStamp = this.fmtDate(date);//当前传入日期时间戳
+        const localDateStamp = this.fmtDate(localDate)//当日时间戳
+        return currentDateStamp - localDateStamp
+
+
+    }
+
+    //初始化日期
+    initDate(year, month) {
+        return new Promise(resolve =&gt; {
+            let weekValue = '';
+            let totalDay = new Date(year, month + 1, 0).getDate()//获取当前所选择月份总天数
+            this.setState({
+                selectMonth: month + 1,
+                dayArr: []
+            }, () =&gt; {
+                //获取并填充当前所查询年份对应月份数据
+                for (let i = 1; i &lt;= totalDay; i++) {
+                    let dayDate = this.formatNum(year) + '-' + this.formatNum(month + 1) + '-' + this.formatNum(i);
+                    let obj = {
+                        sellDate: dayDate,
+                        day: i,
+                        marketAmount: '',//零售价
+                        storeAmount: '',//门市价
+                        dailyStock: '',//库存
+                        bgColor: 'none',
+                        color: '#ccc',
+                        status: 1, //当月的天
+                        ban: 2//1:正常,2:禁用,3:售罄
+                    }
+
+                    weekValue = (new Date(year, month, i)).getDay(); //获取这天对应的是星期几 0 - 6,0 表示星期天
+                    if (i == 1 &amp;&amp; weekValue != 0) {
+                        this.addBeforeValue(weekValue)//填充日历开始的空白,
+                    }
+
+                    let index = this.props.ticketPriceList.findIndex((item) =&gt; {
+                        return item.sellDate == dayDate //匹配设置价格的天,并返回其索引
+                    })
+                    if (index &gt;= 0) {
+                        obj.marketAmount = this.props.ticketPriceList[index].marketAmount;//将价格赋值给日历中匹配到的项
+                        obj.dailyStock = this.props.ticketPriceList[index].dailyStock;
+                        obj.storeAmount = this.props.ticketPriceList[index].storeAmount;
+                    }
+                    this.setValidDate(obj) //设置有效的日期范围
+                    let dayArr = this.state.dayArr;
+                    dayArr.push(obj)//将当前月的天push进数组
+                    this.setState({
+                        dayArr
+                    }, () =&gt; {
+                        if (i == totalDay &amp;&amp; weekValue != 6) {
+                            this.addAfterValue(weekValue) //填充日历结尾的空白
+                        }
+                        resolve(true);
+                    })
+                }
+            })
+            //判断当前展示的月份跟本月关系,如果是当月则禁用返回上个月按钮
+            let dayDate = this.formatNum(year) + '-' + this.formatNum(month + 1) + '-' + this.formatNum(1);
+            if (this.checkValidDate(dayDate) &lt;= 0) {
+                this.setState({
+                    prevMonthStatus: false
+                })
+            } else {
+                this.setState({
+                    prevMonthStatus: true
+                })
+            }
+        })
+    }
+
+    //补充前面空白日期
+    addBeforeValue(weekValue) {
+        let totalDay = new Date(this.state.year, this.state.month, 0).getDate();
+        for (let i = 0; i &lt; weekValue; i++) {
+            let obj = {
+                sellDate: '',
+                day: '',
+                marketAmount: '',//零售价
+                storeAmount: '',//门市价
+                bgColor: 'none',
+                color: '#ccc',
+                status: 0,
+                ban: 2//禁用
+            }
+            // obj.day = totalDay - (weekValue - i) + 1;
+            let dayArr = this.state.dayArr;
+            dayArr.push(obj);
+            this.setState({
+                dayArr
+            })
+        }
+    }
+
+    //补充后空白日期
+    addAfterValue(weekValue) {
+        let totalDay = new Date(this.state.year, this.state.month, 0).getDate();
+        for (let i = 0; i &lt; (6 - weekValue); i++) {
+            let obj = {
+                sellDate: '',
+                day: '',
+                marketAmount: '',//零售价
+                storeAmount: '',//门市价
+                bgColor: 'none',
+                color: '#ccc',
+                status: 2,
+                ban: 2//禁用
+            }
+            //  obj.day = i + 1;
+            let dayArr = this.state.dayArr;
+            dayArr.push(obj);
+            this.setState({
+                dayArr
+            })
+        }
+    }
+    //日期时间的格式化
+    formatNum(num) {
+        return num &lt; 10 ? '0' + num : num + '';
+    }
+
+    //调用initDate方法
+    async callInitDateFunc(year, month) {
+        await this.initDate(year, month);
+        this.initInfo();
+    }
+    //上一个月
+    prevMonth() {
+        if (!this.state.prevMonthStatus) return
+        if (this.state.month == 0) {//1月
+            let year = this.state.year - 1;//需要返回到上一年
+            this.setState({
+                year,
+                month: 11//12月
+            }, () =&gt; {
+                this.callInitDateFunc(this.state.year, this.state.month);
+            })
+        } else {
+            let month = this.state.month - 1;
+            this.setState({
+                month
+            }, () =&gt; {
+                this.callInitDateFunc(this.state.year, this.state.month);
+            })
+        }
+
+    }
+    //下一个月
+    nextMonth() {
+        if (this.state.month == 11) {//12月
+            let year = this.state.year + 1;//到下一年
+            this.setState({
+                year,
+                month: 0//1月
+            }, () =&gt; {
+                this.callInitDateFunc(this.state.year, this.state.month);
+            })
+        } else {
+            let month = this.state.month + 1;
+            this.setState({
+                month
+            }, () =&gt; {
+                this.callInitDateFunc(this.state.year, this.state.month);
+            })
+        }
+
+    }
+    //输出当前点击项(选中的哪天)
+    handleClick(obj) {
+        //查询当前选中日期下标
+        let idx = this.state.dayArr.findIndex((item) =&gt; {
+            return item.sellDate == obj.sellDate
+        })
+        if (this.state.dayArr[idx].status == 0) {//如果点击日历开始的填充日期
+            this.setState({
+                status: 0
+            }, () =&gt; {
+                // this.prevMonth();//自动跳转上一个月
+            })
+            return;
+        }
+        if (this.state.dayArr[idx].status == 2) { //如果点击日历结尾的填充日期
+            this.setState({
+                status: 2
+            }, () =&gt; {
+                //  this.nextMonth();//自动跳转下一个月
+            })
+            return;
+        }
+        if (this.state.dayArr[idx].status == 1 &amp;&amp; this.state.dayArr[idx].ban == 1) {//点击日历日期,并且为可点击状态
+            let dayArr = this.state.dayArr;
+            dayArr[idx].bgColor = '#FEB100';//设定选中日期的背景色
+            dayArr[idx].color = '#fff';//选中日期的文字颜色
+
+            //将日历其他可点击状态的日期文字重置为默认色
+            let count = 0;
+            for (let i = 0; i &lt; this.state.dayArr.length; i++) {
+                if (this.state.dayArr[i].status == 1 &amp;&amp; this.state.dayArr[i].ban == 1 &amp;&amp; i != idx) {
+                    dayArr[i].bgColor = 'none';
+                    dayArr[i].color = '#666';
+                    count++;
+                }
+                if (count &gt;= this.props.ticketPriceList.length) break;//说明已经全部重置完成,直接结束循环
+            }
+            this.setState({
+                dayArr
+            })
+            this.props.handleClick(obj)//返回当前点击的日期给父组件
+        }
+
+    }
+    //价格日历映射表(当前查询日期-&gt;价格日历 ,返回查询日期在价格日历的索引位置)
+    findTicketIndex(obj) {
+        let findDateObj = obj;
+        let index = this.state.dayArr.findIndex((item) =&gt; {
+            return item.sellDate == findDateObj.sellDate //返回其索引
+        })
+        return index;
+
+    }
+    //初始化商品信息
+    initInfo() {
+        const findIndex = this.findTicketIndex(this.props.currentSelectTicket);
+        if (findIndex !== -1) {
+            this.handleClick(this.state.dayArr[findIndex])
+        }
+    }
+
+    componentDidMount() {
+        let year = this.state.date.getFullYear(); //获取当前所在年份
+        let month = this.state.date.getMonth(); //获取当前所在月份 0-11
+        this.setState({
+            year,
+            month
+        }, async () =&gt; {
+            await this.initDate(this.state.year, this.state.month); //初始化日历数据
+            this.initInfo() //初始化当前商品价格等展示信息,该方法只在组件初始化的时候执行一次
+        })
+
+
+    }
+
+    render() {
+        const { year, selectMonth, dayArr, weeks, prevMonthStatus } = this.state
+        return (
+            &lt;View className=&quot;calendar-selector-container&quot;&gt;
+                &lt;View className=&quot;calendar-header&quot;&gt;
+                    &lt;View className=&quot;header-left&quot; onClick={() =&gt; this.prevMonth()}&gt;
+                        &lt;Image className='left-arrow' src={prevMonthStatus ? 'http://static.ledouya.com/FkhXIKoqvceD_ieVbVlUWzM4X_PR' : 'http://static.ledouya.com/Fr3ECEFgaTuTbQPkPKLl-PA2eV8m'} /&gt;
+                        &lt;Text className={['left-text', !prevMonthStatus &amp;&amp; 'ban-text']}&gt;上月&lt;/Text&gt;
+                    &lt;/View&gt;
+                    &lt;View className=&quot;header-center&quot;&gt;{year + '年' + selectMonth}月&lt;/View&gt;
+                    &lt;View className=&quot;header-right&quot; onClick={() =&gt; this.nextMonth()}&gt;
+                        &lt;Text className=&quot;right-text&quot;&gt;下月&lt;/Text&gt;
+                        &lt;Image className=&quot;right-arrow&quot; src=&quot;http://static.ledouya.com/Fl7CcBEZszqiWTpfN0bKSB9NeZdX&quot; /&gt;
+                    &lt;/View&gt;
+                &lt;/View&gt;
+                &lt;View className=&quot;calendar-week&quot;&gt;
+                    {
+                        weeks.map((v) =&gt; (
+                            &lt;View className=&quot;list&quot;&gt;{v}&lt;/View&gt;
+                        ))
+                    }
+
+                &lt;/View&gt;
+                &lt;View className=&quot;calendar-content&quot;&gt;
+                    &lt;View className=&quot;calendar-day&quot;&gt;
+                        {dayArr.map((v, i) =&gt; (
+                            &lt;View className=&quot;list&quot; onClick={() =&gt; this.handleClick(v)}&gt;
+                                &lt;View className={['day', v.ban == 3 &amp;&amp; 'sell-out']} style={{ background: v.bgColor, color: v.color }}&gt;{v.ban == 1 || v.ban == 2 ? v.day : '售罄'}&lt;/View&gt;
+                                {v.ban == 1 &amp;&amp; &lt;View className=&quot;price&quot;&gt;¥{(parseFloat(v.marketAmount) / 100).toFixed(2)}&lt;/View&gt;}
+                            &lt;/View&gt;
+                        ))
+                        }
+                        &lt;View className=&quot;local-month&quot;&gt;{selectMonth}&lt;/View&gt;
+                    &lt;/View&gt;
+                &lt;/View&gt;
+            &lt;/View&gt;
+        )
+    }
+}
+
+</code></pre></div><p>以上就是 calendar 组件实现的核心代码，虽然功能比较简单，但实现的过程中细节逻辑感觉还是挺多的，也是费了些时间去思考细节。因此分享出来，共同进步。如有错误，望大佬们多多指正。</p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/miniProgram/mpvueRecoder.html" class="prev">
+          微信小程序-录音
+        </a></span> <span class="next"><a href="/blog/miniProgram/aboutMiniProgramThink.html">
+          小程序开发的一些想法
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.ea401947.js" defer></script><script src="/assets/js/16.5bedfff1.js" defer></script>
+  </body>
+</html>

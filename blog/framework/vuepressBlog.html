@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>利用vuePress搭建个人博客 | Stone&#39;s blog</title>
+    <meta name="description" content="我的个人博客">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="manifest" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.149a318a.css" as="style"><link rel="preload" href="/assets/js/app.ea401947.js" as="script"><link rel="preload" href="/assets/js/11.49cc4223.js" as="script"><link rel="prefetch" href="/assets/js/10.8289ad59.js"><link rel="prefetch" href="/assets/js/12.b6072a42.js"><link rel="prefetch" href="/assets/js/13.955ef775.js"><link rel="prefetch" href="/assets/js/14.9a2f41d1.js"><link rel="prefetch" href="/assets/js/15.54d212a3.js"><link rel="prefetch" href="/assets/js/16.5bedfff1.js"><link rel="prefetch" href="/assets/js/17.d4ecc3c5.js"><link rel="prefetch" href="/assets/js/18.5fab1924.js"><link rel="prefetch" href="/assets/js/19.91cf35e1.js"><link rel="prefetch" href="/assets/js/2.32f31581.js"><link rel="prefetch" href="/assets/js/20.8c918921.js"><link rel="prefetch" href="/assets/js/3.1930e7d8.js"><link rel="prefetch" href="/assets/js/4.5384e2e8.js"><link rel="prefetch" href="/assets/js/5.01f97a81.js"><link rel="prefetch" href="/assets/js/6.a809fad3.js"><link rel="prefetch" href="/assets/js/7.56a8429c.js"><link rel="prefetch" href="/assets/js/8.fd3437fd.js"><link rel="prefetch" href="/assets/js/9.7380b7a3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.149a318a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Stone's blog</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/space/" class="nav-link">Space</a></div><div class="nav-item"><a href="https://github.com/HUYIJUNCODING" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/space/" class="nav-link">Space</a></div><div class="nav-item"><a href="https://github.com/HUYIJUNCODING" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>前端基础</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>小程序</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>框架相关</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/blog/framework/vuepressBlog.html" class="active sidebar-link">利用vuePress搭建个人博客</a></li><li><a href="/blog/framework/globalComponentsInVue.html" class="sidebar-link">Vue组件之全局注册</a></li><li><a href="/blog/framework/envirPackageProjectVue.html" class="sidebar-link">前端项目之vue分环境打包</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h2 id="利用vuepress搭建个人博客"><a href="#利用vuepress搭建个人博客" aria-hidden="true" class="header-anchor">#</a> 利用vuePress搭建个人博客</h2> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>最近抽空学习了一下vuePress来搭建一个个人博客,在整个过程中感受颇多,特此罗列,方便交流进步!</p></div> <h3 id="step1-初始化项目"><a href="#step1-初始化项目" aria-hidden="true" class="header-anchor">#</a> step1 (初始化项目)</h3> <div class="warning custom-block"><p class="custom-block-title">WARNING</p> <p>目前vuePress官方已经发布两个版本0.x and 1.x，在使用过程中发现1.x存在一些问题。例如:项目不能热更新config.js文件中的更改，navbar显示异常等问题，因此小弟建议使用0.x。</p></div> <ul><li>这部分可以按照官网的 <a href="https://vuepress.vuejs.org/zh/guide/getting-started.html" target="_blank" rel="noopener noreferrer">快速上手<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 来初始化项目,我使用的是npm方式</li></ul> <div class="language- extra-class"><pre class="language-text"><code>   1. npm install -g vuepress (全局安装vuePress)
+
+   2. mkdir 项目名称 (新建项目文件夹. 可以右键手动新建，也可以使用 mkdir 命令新建)
+
+   3. npm init -y (进入刚新建的项目文件夹,初始化项目)
+
+   4. 在项目文件夹根目录创建 docs 文件夹，在 docs 中创建 .vuepress 文件夹，在.vuepress中创建 public 文件夹,components 文件夹,override.styl文件,style.styl文件和 config.js 文件，初始项目结构如下所示：
+
+        vuepressBlog //项目文件夹
+        ├─── docs
+        │   ├──── README.md //一般用来做首页
+        │   └──── .vuepress //用于存放全局的配置、组件、静态资源等
+        |      ├── components //该目录中的 Vue 组件将会被自动注册为全局组件
+        │      ├── public // 静态资源目录
+        |      ├── override.styl //用于重写默认颜色常量，或者设置新的 stylus 颜色常量。(定义的样式常量可以在vue组件中直接使用)
+        |      ├── style.styl //会被自动应用的全局样式文件,具有比默认样式更高的优先级(需要覆盖的默认样式代码写在该文件里)
+        │      └── config.js  //配置文件的入口文件(即配置性的东西基本在这配置)
+        └── package.json
+</code></pre></div><p>至此,项目初始化工作就已完毕,包括上面的初始化项目结构目录,后面步骤中会对目录进行进一步完善,不过都是些按需配置的工作.</p> <hr> <h3 id="step2-项目配置"><a href="#step2-项目配置" aria-hidden="true" class="header-anchor">#</a> step2 (项目配置)</h3> <ul><li>这部分工作我们在config.js文件中做,不要问我为神马,规定,规定,规定,重要的事情说三遍!!!
+能用代码呈现的问题,我一般尽量不去bb,所以,直接贴config.js文件中的代码,直接可以复制去用的.</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    title<span class="token punctuation">:</span> <span class="token string">'Stone\'s blog'</span><span class="token punctuation">,</span>  <span class="token comment">//博客标题</span>
+    description<span class="token punctuation">:</span> <span class="token string">'我的个人博客'</span><span class="token punctuation">,</span> <span class="token comment">//个人描述</span>
+    head<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token comment">// 注入到当前页面的 HTML &lt;head&gt; 中的标签</span>
+      <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>  <span class="token comment">// 增加一个自定义的 favicon(网页标签的图标)</span>
+        rel<span class="token punctuation">:</span> <span class="token string">'icon'</span><span class="token punctuation">,</span>
+        type<span class="token punctuation">:</span> <span class="token string">'image/x-icon'</span><span class="token punctuation">,</span>
+        href<span class="token punctuation">:</span> <span class="token string">'./favicon.ico'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">[</span><span class="token string">'link'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> rel<span class="token punctuation">:</span> <span class="token string">'apple-touch-icon'</span><span class="token punctuation">,</span> href<span class="token punctuation">:</span> <span class="token string">'./favicon.ico'</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//适配移动端ico</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    base<span class="token punctuation">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token comment">// 这是部署到github相关的配置</span>
+    markdown<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      lineNumbers<span class="token punctuation">:</span> <span class="token boolean">false</span> <span class="token comment">// 代码块显示行号</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    themeConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      nav<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token comment">// 导航栏配置</span>
+        <span class="token punctuation">{</span>
+          text<span class="token punctuation">:</span> <span class="token string">'Home'</span><span class="token punctuation">,</span>
+          link<span class="token punctuation">:</span> <span class="token string">'/'</span> <span class="token comment">// '/'默认为docs文件夹下的README.md文件</span>
+
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          text<span class="token punctuation">:</span> <span class="token string">'Blog'</span><span class="token punctuation">,</span>
+          link<span class="token punctuation">:</span> <span class="token string">'/blog/'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          text<span class="token punctuation">:</span> <span class="token string">'Space'</span><span class="token punctuation">,</span>
+          link<span class="token punctuation">:</span> <span class="token string">'/space/'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          text<span class="token punctuation">:</span> <span class="token string">'GitHub'</span><span class="token punctuation">,</span>
+          link<span class="token punctuation">:</span> <span class="token string">'https://github.com/HUYIJUNCODING'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'/blog/'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            title<span class="token punctuation">:</span> <span class="token string">'前端daily'</span><span class="token punctuation">,</span> <span class="token operator">/</span>sidebar<span class="token operator">/</span> 侧边栏名称
+            collapsable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 可折叠</span>
+            children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                <span class="token string">'/blog/javaScript/one'</span><span class="token punctuation">,</span> <span class="token comment">//文章地址</span>
+                <span class="token string">'/blog/javaScript/two'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            title<span class="token punctuation">:</span> <span class="token string">'框架相关'</span><span class="token punctuation">,</span>
+            collapsable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                <span class="token string">'/blog/framework/vuepressBlog'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            title<span class="token punctuation">:</span> <span class="token string">'工具收藏'</span><span class="token punctuation">,</span>
+            collapsable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                <span class="token string">'/blog/tools/one'</span><span class="token punctuation">,</span>
+                <span class="token string">'/blog/tools/two'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token string">'/space/'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            title<span class="token punctuation">:</span> <span class="token string">'诗和远方'</span><span class="token punctuation">,</span>
+            collapsable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                <span class="token string">'/space/poetryAndDistance/one'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            title<span class="token punctuation">:</span> <span class="token string">'谝闲传'</span><span class="token punctuation">,</span>
+            collapsable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            children<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+                <span class="token string">'/space/talk/one'</span><span class="token punctuation">,</span>
+            <span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token comment">// 侧边栏配置</span>
+      sidebarDepth<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">// 侧边栏显示2级</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>至此项目你已经完成一半了,关于配置这里我重点说几个点,也是我在实现过程中遇到了问题的地方.</p> <div style="background-color:rgba(255,255,255,0.5);padding: 20px;border-radius: 6px;"><strong>1. favicon存放位置(别问我为神马,n多次失败后的经验,嘿嘿嘿!!!) </strong><br> <pre><code>    存放目录:  .vuepress -&gt; public/favicon.ico
+
+    引用方式:  config.js文件中 href: './favicon.ico'
+</code></pre> <p><strong>2. sidebar配置方式 </strong></p><p>     vuePress官方给出了两种不同的方式,可以<a href="https://vuepress.vuejs.org/zh/default-theme-config/#%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%88%86%E7%BB%84" target="_blank" rel="noopener noreferrer">戳这里<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>,但是还是觉得有瑕疵,如果将两种方式结合起来使用,会有何化学效果,bling,bling,bling.
+因此config.js文件中的sidebar配置方式就产生了,使用后发现确实很棒,确认过眼神,是我想要的,bling,bling,bling.
+预览实现的效果,请<a href="https://huyijuncoding.github.io/" target="_blank" rel="noopener noreferrer">前往我的blog<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.
+</p> <strong>3. navbar模块</strong> <p>    navbar对应的模块放在docs文件夹根目录下,即与.vuepress同级,各模块以文件夹的形式建立,例如我这里的blog,  space.每一个文件下可以有一个README.md文件,也可以没有,没有的话,在navbar关联路径时候需要特定指定某一个子.md文件,避免navbar切换后
+内容为空,因为默认会找该模块下的README.md文件.
+</p></div><p></p> <ul><li>在 package.json 文件里添加两个启动命令</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>🐵此时此刻我的心情是激动地,✨,✨,✨ 那种,为啥嘞,因为 <code>npm run dev</code>项目🚀</p> <div class="language- extra-class"><pre class="language-text"><code>本地启动项目: npm run dev
+
+打包项目: npm run build
+</code></pre></div><ul><li>到这里项目就基本完成,下来呢就是一些业务逻辑方面或者根据个人喜好锦上添花的工作,总之,基础落成,下来就剩coding的事了(写博客文章的事情,需自身去修行完成)!</li></ul> <h3 id="step3-部署上线"><a href="#step3-部署上线" aria-hidden="true" class="header-anchor">#</a> step3 (部署上线)</h3> <ul><li><p>走到这一步的小伙伴们一定是coding完成了或者基本差不多了,那麽下来我们将项目部署到GitHub上,这样仰慕你的小伙伴就可以线上访问到你的博客啦.</p></li> <li><p>方式很多种,我这里只以GitHub为例 (其实我只会这个😂 😂 😂)</p></li></ul> <h4 id="登录-github-新建两个仓库"><a href="#登录-github-新建两个仓库" aria-hidden="true" class="header-anchor">#</a> 登录 Github 新建两个仓库</h4> <p>新建仓库一： <strong>GITHUBUSERNAME.github.io（不用克隆到本地）</strong></p> <div class="warning custom-block"><p class="custom-block-title">WARNING</p> <p>这里的 GITHUBUSERNAME 是你的GitHub名称,是你的GitHub名称,是你的GitHub名称,很重要的事情说三遍,只能必须完全相同,为了更具体说明,我贴一张图.</p></div> <p><img src="/blogs/gitHubName.png" alt="GitHub名称" title="GitHub名称"></p> <p style="color: ">然后 Repository name 就填写为：GITHUBUSERNAME.github.io ,以我的为例子就是 HUYIJUNCODING.github.io,同样贴出来一张图</p> <p><img src="/blogs/createStore.png" alt="博客部署仓库" title="博客部署仓库"></p> <p><strong>ok,第一个仓库就新建好了,该仓库不用clone到本地,不用做任何操作,所有代码的修改都在第二个仓库中进行,这个仓库后面关联后只是用来存放线上发布的代码的,即dist目录下的文件</strong></p> <p>新建仓库二：   <strong>这里的仓库名可以随便起,例如:blog.github.io（克隆到本地）</strong></p> <p>这个仓库存放本地项目代码,以后的修改均在这里进行.</p> <ul><li>如果是自己从头搭建的，那就将当前博客项目根目录下的内容拷贝到仓库二，并在仓库本地根目录下创建 deploy.sh 文件，内容如下：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>#<span class="token operator">!</span><span class="token operator">/</span>usr<span class="token operator">/</span>bin<span class="token operator">/</span>env sh
+
+# 确保脚本抛出遇到的错误
+<span class="token keyword">set</span> <span class="token operator">-</span>e
+
+# 生成静态文件
+npm run build
+
+# 进入生成的文件夹
+cd docs<span class="token operator">/</span><span class="token punctuation">.</span>vuepress<span class="token operator">/</span>dist
+
+git init
+git add <span class="token operator">-</span><span class="token constant">A</span>
+git commit <span class="token operator">-</span>m <span class="token string">'deploy'</span>
+
+git push <span class="token operator">-</span>f git@github<span class="token punctuation">.</span>com<span class="token punctuation">:</span><span class="token constant">USERNAME</span><span class="token operator">/</span><span class="token constant">USERNAME</span><span class="token punctuation">.</span>github<span class="token punctuation">.</span>io<span class="token punctuation">.</span>git master  <span class="token comment">//这句需要配置自己的仓库地址,除过这句代码,其他均复制粘贴即可</span>
+
+cd <span class="token operator">-</span>
+</code></pre></div><ul><li>贴出来我的仓库目录来说明</li></ul> <p><img src="/blogs/mulu.png" alt="合并目录" title="合并目录"></p> <ul><li>修改deploy.sh文件(上面代码其实已经体现,不过为了说明其重要性,在这里单独再拿出来说明哈)</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>git push <span class="token operator">-</span>f git@github<span class="token punctuation">.</span>com<span class="token punctuation">:</span><span class="token constant">USERNAME</span><span class="token operator">/</span><span class="token constant">USERNAME</span><span class="token punctuation">.</span>github<span class="token punctuation">.</span>io<span class="token punctuation">.</span>git master
+
+<span class="token comment">// 就上面这句代码,如果你想要部署到 https://USERNAME.github.io上,你需要将USERNAME替换成你的GitHub名称,例如我的替换成 HUYIJUNCODING,</span>
+<span class="token comment">// 即git push -f git@github.com:HUYIJUNCODING/HUYIJUNCODING.github.io.git master</span>
+</code></pre></div><p>到这里有的小伙伴会疑惑那仓库一和仓库二如何做到关联呢,很好,如果你有这个疑问,那我这个时候就一本正经的告诉你,刚才修改的这个地方就是解决这个问题的,用来<strong> 关联两个仓库</strong>,仓库一就类似于我们的线上服务器,仓库二用于本地开发.</p> <ul><li>在 package.json 文件夹中添加发布命令</li></ul> <div class="language-json extra-class"><pre class="language-json"><code> <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress dev docs&quot;</span><span class="token punctuation">,</span>  <span class="token comment">//运行项目</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs&quot;</span><span class="token punctuation">,</span> <span class="token comment">//打包项目</span>
+    <span class="token property">&quot;deploy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bash deploy.sh&quot;</span><span class="token punctuation">,</span> <span class="token comment">//发布项目</span>
+    <span class="token property">&quot;publish&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vuepress build docs &amp;&amp; bash deploy.sh&quot;</span> <span class="token comment">//打包发布一步完成(自定义的命令,为了将打包和发布合并成一步执行)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h4 id="一座蒂花之秀落成"><a href="#一座蒂花之秀落成" aria-hidden="true" class="header-anchor">#</a> 🎉 一座蒂花之秀落成!</h4> <div class="language-js extra-class"><pre class="language-js"><code>发布命令<span class="token punctuation">:</span> npm run deploy  <span class="token comment">//仅仅发布项目,如果代码有更新,该操作前需要npm run build下</span>
+打包发布命令<span class="token punctuation">:</span> npm run publish <span class="token comment">//先打包项目,再发布项目,就不需要再单独执行一次npm run build</span>
+</code></pre></div><ul><li>完成后就可以运行自己的项目啦,这里是我的地址: <a href="https://huyijuncoding.github.io/" target="_blank">https://huyijuncoding.github.io/</a></li></ul> <p><img src="/blogs/construct.png" alt="项目结构目录" title="项目结构目录"></p> <p>--------------------------------------------------一条华丽的分割线-------------------------------------------------------</p> <blockquote><p>以为我bb完了,对吗?怎么可能,对啊,当然还没有,哈哈哈!,下面是一些友情提示和福利</p></blockquote> <p>☀️ .md 文件中引用vue组件方法</p> <ol><li>页面覆盖引用<br>
+该引用方法会覆盖当前整个页面(除过navbar),因此展示内容都在.vue组件里面写,跟我们写vue代码就一样了.</li></ol> <p><img src="/blogs/yinru.png" alt=".md文件引入vue组件" title="覆盖引入组件"></p> <ol start="2"><li>局部引用<br>
+该引用方法不会覆盖当前页面,按需引入,局部展示,实例请<a href="https://vuepress.vuejs.org/zh/guide/using-vue.html#%E4%BD%BF%E7%94%A8%E7%BB%84%E4%BB%B6" target="_blank" rel="noopener noreferrer">前往文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</li></ol> <p>❄️ 全局默认样式覆盖,颜色常量设置</p> <div class="language-js extra-class"><pre class="language-js"><code> override<span class="token punctuation">.</span>styl <span class="token comment">//用于重写默认颜色常量，或者设置新的 stylus 颜色常量。(定义的样式常量可以在vue组件中直接使用)</span>
+ style<span class="token punctuation">.</span>styl <span class="token comment">//会被自动应用的全局样式文件,具有比默认样式更高的优先级(需要覆盖的默认样式代码写在该文件里)</span>
+</code></pre></div><ul><li>当我们需要覆盖vuePress中一些默认样式,例如,navbar,sidebar字体颜色,背景色等就可以在style.styl文件中直接重写,
+当需要定义些或者重写颜色常量,就可以在override.tyl中设置然后在.vue组件中直接使用.</li></ul> <hr> <p>🌟 <a href="https://www.webfx.com/tools/emoji-cheat-sheet/" target="_blank" rel="noopener noreferrer">vuePress中可以使用的Emoji集合<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <br>
+💥 <a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener noreferrer">markdown语法资源<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/miniProgram/aboutMiniProgramThink.html" class="prev">
+          小程序开发的一些想法
+        </a></span> <span class="next"><a href="/blog/framework/globalComponentsInVue.html">
+          Vue组件之全局注册
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.ea401947.js" defer></script><script src="/assets/js/11.49cc4223.js" defer></script>
+  </body>
+</html>
